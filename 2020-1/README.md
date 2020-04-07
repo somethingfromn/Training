@@ -1,2 +1,1 @@
-# Training
-Training Myself Everyday With New Coding Problems
+# 2020-1 (The First Half)

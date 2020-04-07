@@ -23,14 +23,4 @@ Hello World!
 ### 메모
 
 
-### C 언어 솔루션
-
-#include <stdio.h>
-
-
-int main (){
-   
-    printf("Hello World!");
-  
-    return 0;
-}
+### 사용 언어: C

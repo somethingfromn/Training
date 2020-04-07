@@ -29,7 +29,7 @@
 
 - ### 예제 출력 1 
 
-![주석 2020-04-07 191234](https://user-images.githubusercontent.com/58179041/78657773-3be64c00-7904-11ea-9b5c-8d2ca82999d5.png)
+  ![주석 2020-04-07 191234](https://user-images.githubusercontent.com/58179041/78657773-3be64c00-7904-11ea-9b5c-8d2ca82999d5.png)
 
 
 ---

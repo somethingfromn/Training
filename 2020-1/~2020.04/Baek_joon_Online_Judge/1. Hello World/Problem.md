@@ -39,5 +39,7 @@
 - ### 메모:
 
   ## 문제 난이도: 1/10
-  ## 걸린 시간: 1 min
-  ## 컴파일 시도 횟수: 2회
+  ## 걸린 시간: 2 min
+  ## 컴파일 시도 횟수: 5회 and why:
+  ## I have been still figuring out Y..
+  

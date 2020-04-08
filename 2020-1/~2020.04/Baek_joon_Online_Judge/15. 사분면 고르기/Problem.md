@@ -6,7 +6,7 @@
 
   흔한 수학 문제 중 하나는 주어진 점이 어느 사분면에 속하는지 알아내는 것이다. 사분면은 아래 그림처럼 1부터 4까지 번호를 갖는다. "Quadrant n"은 "제n사분면"이라는 뜻이다.
     
-  ![주석 2020-04-07 193908](https://user-images.githubusercontent.com/58179041/78660271-c9776b00-7907-11ea-85e1-9cbbdf57d8fa.png)
+  ![주석 2020-04-09 011941](https://user-images.githubusercontent.com/58179041/78808516-7b925e00-7a00-11ea-90ab-bec826e3e51f.png)
 
     
   

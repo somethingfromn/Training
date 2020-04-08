@@ -1,25 +1,22 @@
-/*문제
-(세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
-(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
-
-첫째 줄에 (1)의 위치에 들어갈 세 자리 자연수가, 둘째 줄에 (2)의 위치에 들어갈 세자리 자연수가 주어진다.
-
-첫째 줄부터 넷째 줄까지 차례대로 (3), (4), (5), (6)에 들어갈 값을 출력한다.*/
-
 #include <stdio.h>
 
 int main(){
-    int a;
-    int b;    
     
-    scanf("%d", &a);
-    scanf("%d", &b);
+    int x;
+    int y;
+   
+    scanf("%d", &x);
+    scanf("%d", &y);
     
-    printf("%d\n", a*(b%10)); // This is first digit of b
-    printf("%d\n", a*(((b%100) - (b%10))/10)); // This is second digit of b
-    printf("%d\n", a*(b/100));
-    printf("%d", (a*(b%10)) + ((a*(((b%100) - (b%10))/10))*10) + ((a*(b/100))*100));
+    if(x>0 && y>0){
+        printf("1");
+    }else if(x>0 && y<0){
+        printf("4");
+    }else if(x<0 && y>0){
+        printf("2");
+    }else{
+        printf("3");
+    }
     
     return 0;
-    
 }

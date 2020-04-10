@@ -31,7 +31,7 @@
 
 - ### 예제 출력 1  
 
-![주석 2020-04-10 184007](https://user-images.githubusercontent.com/58179041/78981354-bad4c200-7b5a-11ea-877c-34e7ad6bc93f.png)
+  ![주석 2020-04-10 184007](https://user-images.githubusercontent.com/58179041/78981354-bad4c200-7b5a-11ea-877c-34e7ad6bc93f.png)
 
  
 ---

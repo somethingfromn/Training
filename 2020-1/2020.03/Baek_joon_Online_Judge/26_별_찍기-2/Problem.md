@@ -31,10 +31,10 @@
 
 - ### 예제 출력 1  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\*  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\***  
-&nbsp;&nbsp;&nbsp;&nbsp;\****  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \*  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \***  
+&nbsp;&nbsp;&nbsp;&nbsp; \****  
 &nbsp;&nbsp;&nbsp;\*****  
  
 ---

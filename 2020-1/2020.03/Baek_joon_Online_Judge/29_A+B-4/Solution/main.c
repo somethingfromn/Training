@@ -1,24 +1,35 @@
+/*문제
+두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
+
+입력
+입력은 여러 개의 테스트 케이스로 이루어져 있다.
+
+각 테스트 케이스는 한 줄로 이루어져 있으며, 각 줄에 A와 B가 주어진다. (0 < A, B < 10)
+
+출력
+각 테스트 케이스마다 A+B를 출력한다.*/
+
 #include <stdio.h>
 
-int main(void){
-
-  int N;
-  int count;
-  int X;
-  int number;
-
-  scanf("%d", &N);
-  scanf("%d", &X);
-
-  for(count = 1; count <= N; count++){
+int main(){
     
-    scanf("%d", &number);
-
-    if(number<X){
-    printf("%d ", number);}
-
-  }
-
-
-  return 0;
+    int A;
+    int B;
+    int a;
+    int b;
+    
+    while(1){
+        
+       a=scanf("%d", &A);
+       b=scanf("%d", &B);
+        
+      if(a == EOF || b == EOF){
+         break;
+       }else{
+       printf("%d\n", A+B);
+      }
+    }
+       
+    return 0;
+    
 }

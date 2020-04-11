@@ -1,24 +1,36 @@
 #include <stdio.h>
 
-int main(void){
-
-  int N;
-  int count;
-  int X;
-  int number;
-
-  scanf("%d", &N);
-  scanf("%d", &X);
-
-  for(count = 1; count <= N; count++){
+int main(){
     
-    scanf("%d", &number);
+    int first_num;
+    int last_num;
+    int num;
+    int tens;
+    int ones;
+    int cycle_clock=0;
+    
+    scanf("%d", &first_num);
+  
+    num = first_num;
+    
+    while (1){
 
-    if(number<X){
-    printf("%d ", number);}
+      tens = first_num/10;
+      ones = first_num%10;
+      last_num = tens + ones;
+      cycle_clock = cycle_clock+1;
 
-  }
+      first_num = ones*10 + last_num%10;
 
+      if(num == first_num){
+        break;
+      }
 
-  return 0;
+    }
+    
+    printf("%d\n", cycle_clock);
+
+    return 0;
+    
+    
 }

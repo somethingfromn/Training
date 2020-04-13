@@ -1,20 +1,61 @@
-//첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
 #include <stdio.h>
 
 int main(){
-    int A=0;
-    int B=0;
 
-    scanf("%d", &A);
-    scanf("%d", &B);
-    
-    if(A>0 && B<10){
+  int column;
+  int row;
+  int star_counter;
 
-    printf("%d", A+B);
-    
-    }else{
-      printf("error");
+  scanf("%d", &star_counter);
+
+  for(row=star_counter; row >0; row--){
+
+
+    for(column = row; column < star_counter; column++){
+
+      printf(" ");
+
     }
+
+    for(column = (row*2)-1; column>0; column--){
+
+      printf("*");
+
+    }
+    if(row != 1){
+      printf("\n");
+    }
+  }
+  
+
+  for(row=0; row <= star_counter; row++){
+
+    if(row !=1){
+      
+      for(column = row; column < star_counter; column++){
+        if(row ==0){
+          break;
+        }
+        printf(" ");
+
+      }
     
-    return 0;
+      for(column = (row*2)-1; column>0; column--){
+      
+        printf("*");
+    
+
+      }
+    
+    
+      printf("\n");
+    
+    }
+  }
+
+
+
+  return 0;
+
+
 }

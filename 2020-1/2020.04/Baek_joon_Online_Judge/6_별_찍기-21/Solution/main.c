@@ -1,21 +1,51 @@
-/*문제
-두 정수 A와 B를 입력받은 다음, A-B를 출력하는 프로그램을 작성하시오.
-첫째 줄에 A와 B가 주어진다. (0 < A, B < 10)
-첫째 줄에 A-B를 출력한다.*/
 #include <stdio.h>
 
-int main(){
-    int A;
-    int B;
-    
-    scanf("%d", &A);
-    scanf("%d", &B);
-    
-    if(A>0 && B <10){
-        printf("%d", A-B);
-    }else{
-        printf("Error");
-        return 0;
+int main(void){
+
+int row;
+int colunm;
+int count;
+int temp;
+
+
+
+
+scanf("%d", &count);
+
+temp = count;
+
+for(colunm=0; colunm < count; colunm++)
+{
+    if (count == 1){
+      printf("*");
+      break;
     }
-    return 0;
+
+  for (row=0; row < temp; row++)
+  {
+    
+
+    if (row%2 == 0){
+      printf("* ");
+    }
+  }
+
+  printf("\n");
+
+  for(row =0; row <temp; row ++){
+
+    if (row%2 == 0){
+      if(row != temp-1){
+        printf(" *");
+      }
+      
+    }
+  }  
+  
+  printf("\n");
+}
+
+
+return 0;
+
 }

@@ -41,7 +41,7 @@
 - ### 예제 출력 2
 
   
-![1](https://user-images.githubusercontent.com/58179041/79100267-185a5000-7da1-11ea-948f-85479f5522f1.png)  
+  ![1](https://user-images.githubusercontent.com/58179041/79100267-185a5000-7da1-11ea-948f-85479f5522f1.png)  
 
 ---
 

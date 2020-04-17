@@ -1,41 +1,47 @@
-/*문제
-(A+B)%C는 (A%C + B%C)%C 와 같을까?
-
-(A×B)%C는 (A%C × B%C)%C 와 같을까?
-
-세 수 A, B, C가 주어졌을 때, 위의 네 가지 값을 구하는 프로그램을 작성하시오.
-
-입력
-첫째 줄에 A, B, C가 순서대로 주어진다. (2 ≤ A, B, C ≤ 10000)
-
-출력
-첫째 줄에 (A+B)%C, 둘째 줄에 (A%C + B%C)%C, 셋째 줄에 (A×B)%C, 넷째 줄에 (A%C × B%C)%C를 출력한다.*/
-
 #include <stdio.h>
+#include <stdlib.h>
+int Ten = 10;
+int devisor = 42;
+int detection = 1004;
 
-int main(){
+int main(void){
+  
+  int a;
+  int b;
+  int B;
+  int *A = (int*)malloc(sizeof(int)*Ten);
+  int count=0;
+  
+  for (a=0; a<Ten; a++){
+
+   scanf("%d", &A[a]);
+
+  }
+
+  for(a=0; a<Ten; a++){
     
-    int A; 
-    int B;
-    int C;
-    
-    scanf("%d", &A);
-    scanf("%d", &B);
-    scanf("%d", &C);
-    
-    if(A && B && C >= 2 && 10000 >= A && B && C ){
-    
-        printf("%d\n", (A+B)%C);
-        printf("%d\n", (A%C + B%C)%C);
-        printf("%d\n", (A*B)%C);
-        printf("%d", (A%C * B%C)%C);
-    }else{
-        printf("Error");
+    A[a]=A[a]%devisor;
+
+  }
+
+  for(a=0; a<Ten; a++){
+    for(b=a+1; b<Ten; b++){
+      if (A[a] == A[b]){
+        A[b] = detection;
+        detection ++;
+      }
     }
-    
-    return 0;
-    
-    
-}
+  }
+  
+  for(a=0; a<Ten; a++){
+    if (A[a] >= 1004){
+      count++;
+    }
+  }
 
-    
+
+  printf("%d", Ten-count);
+  
+  return 0;
+
+}

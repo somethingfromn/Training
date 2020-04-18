@@ -1,25 +1,42 @@
-/*문제
-(세 자리 수) × (세 자리 수)는 다음과 같은 과정을 통하여 이루어진다.
-(1)과 (2)위치에 들어갈 세 자리 자연수가 주어질 때 (3), (4), (5), (6)위치에 들어갈 값을 구하는 프로그램을 작성하시오.
-
-첫째 줄에 (1)의 위치에 들어갈 세 자리 자연수가, 둘째 줄에 (2)의 위치에 들어갈 세자리 자연수가 주어진다.
-
-첫째 줄부터 넷째 줄까지 차례대로 (3), (4), (5), (6)에 들어갈 값을 출력한다.*/
-
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(){
-    int a;
-    int b;    
-    
-    scanf("%d", &a);
-    scanf("%d", &b);
-    
-    printf("%d\n", a*(b%10)); // This is first digit of b
-    printf("%d\n", a*(((b%100) - (b%10))/10)); // This is second digit of b
-    printf("%d\n", a*(b/100));
-    printf("%d", (a*(b%10)) + ((a*(((b%100) - (b%10))/10))*10) + ((a*(b/100))*100));
-    
-    return 0;
-    
+
+int main(void){
+
+  float N;
+  float M;
+  int A;
+  float* score;
+  float SumOfScores;
+  
+  scanf("%f", &N);
+
+  if (N>1000){
+    printf("N should be smaller than and equal to 1000\n");
+  }
+
+  score = (float*)malloc(sizeof(float)*N);
+  
+  // 스코어 정립
+  for(A=0; A<N; A++){
+    scanf("%f", &score[A]);
+    if(A==0){
+      M = score[A];
+    }else if(score[A]>M){
+      M = score[A];
+    }
+  }
+
+  
+  // 새로운 스코어 만들기
+
+  for(A=0; A<N; A++){
+    score[A] = (score[A]/M)*100;
+    SumOfScores += score[A];
+  }
+
+  printf("%f", SumOfScores/N);
+
+  return 0;
 }

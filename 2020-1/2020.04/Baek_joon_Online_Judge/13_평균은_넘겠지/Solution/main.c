@@ -49,10 +49,8 @@ int main(void){
     //printf("\ncount: %f\n", count);
     PercentOfOverAverage[a] = (count/HowMany)*100; 
   }
-
   for(a=0; a<C; a++){
     printf("%.3f%%\n",PercentOfOverAverage[a]);  
   }
-
-
+  return 0;
 }

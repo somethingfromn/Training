@@ -42,5 +42,5 @@
   ## 문제 난이도: 1/10
   ## 걸린 시간: 1 min
   ## 컴파일 시도 횟수: 2회 and why:
-  ## 라이브러리 오타 (studio.h -> stdio.h)
+  ## 라이브러리 오타 (studio.h -> stdio.h) 
   
